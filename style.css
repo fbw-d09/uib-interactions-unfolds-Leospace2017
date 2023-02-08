@@ -1,0 +1,79 @@
+body
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main
+{
+    margin: auto;
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr;
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+
+}
+main div
+{
+    position: relative;
+}
+
+.message
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 400px;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+main div:nth-child(2)
+{
+    background-color: steelblue;
+    transition: all 1s ease-in;
+}
+main div:nth-child(3)
+{
+    background-color: dimgray;
+    transition: all 1s ease-in;
+}
+main div:nth-child(4)
+{
+    background-color: yellow;
+    transition: all 1s ease-in;
+
+}
+main div:last-child
+{
+    background-color: rosybrown;
+    transition: all 1s ease-in;
+}
+
+/* Hover */
+main:hover div:nth-child(2)
+{
+    transform: rotate(90deg)
+    translateY(200px);
+}
+
+main:hover div:nth-child(3)
+{
+    transform: rotate(-90deg)
+    translateY(200px);
+}
+main:hover div:nth-child(4)
+{
+
+    transform: rotate(90deg)
+    translateY(200px);
+}
+
+main:hover div:last-child
+{
+    transform: rotate(-90deg)
+    translateY(200px);
+}
